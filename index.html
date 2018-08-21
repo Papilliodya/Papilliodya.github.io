@@ -1,5 +1,6 @@
 <head>
 </head>
 <body>
+{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}
 { site.SEOTitle }
 </body>
