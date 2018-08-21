@@ -11,4 +11,6 @@ layout: default
 {{ site.SEOTitle }}
 
 {{ page.title }}
+
+{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}
 </div>
