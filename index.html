@@ -3,11 +3,6 @@ layout: default
 ---
 
 <div>
-{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}
-
-{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}
-</div>
-<div>
     {% for post in paginator.posts %}
     <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
