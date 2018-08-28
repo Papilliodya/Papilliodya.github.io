@@ -2,55 +2,8 @@
 layout: default
 description: "Blog of learning note"
 ---
-{{ site.title }}
-{{ site.baseurl }}
-
-<script type="text/javascript">
 
 
-    var alpha01=255;
-    setTimeout(OnTmer,100);
-    function SetTimeout()
-    {
-        alert("ada");
-        setTimeout(OnTmer,100);
-    }
-    
-    
-    function OnTmer ()
-    {
-    
-    var div1=document.getElementById("splash01");
-    div1.style.opacity=alpha01/255.0;
-    alpha01-=8;
-    if(alpha01>4)
-    {
-        setTimeout(OnTmer,100);
-        
-    }else{
-        div1.style.visibility="hidden";
-    }
-    
-    }
-    
-    
-</script>
-    
-<div onload='SetTimeout()' id=splash01 style=" width: 100% ;height:100%;position:fixed; opacity:0.1; left:0px; top: 0px ;" >
-
-    <div align="center" style=" width: 100% ;height:100% ;background-color:rgba(255,128,128,255) ; "  >
-        
-        <div align="center" style="vertical-align:center;">
-            <img style="height:100%; " src=".\img\wingforpapilliodya.png" />
-            
-        </div>
-        
-        
-    </div>
-    
-</div>
-
-ertfyguhjknbvfgtyuh
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
