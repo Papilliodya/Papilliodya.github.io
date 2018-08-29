@@ -7,7 +7,7 @@ description: "Blog of learning note"
 
 
     var alpha01=255;
-    setTimeout(OnTmer,100);
+    setTimeout(OnTmer,50);
     function SetTimeout()
     {
         alert("ada");
@@ -20,13 +20,39 @@ description: "Blog of learning note"
     
     var div1=document.getElementById("splash01");
     div1.style.opacity=alpha01/255.0;
-    alpha01-=8;
+    alpha01-=2;
+
+    var wfp1,wfp2,wfp3;
+    wfp1=document.getElementById("wfp_1");
+    wfp2=document.getElementById("wfp_2");
+    wfp3=document.getElementById("wfp_3");
+
+
+    if(alpha01>220 )
+    {
+        wfp1.style.height="100%"
+        wfp2.style.height="0%"
+        wfp3.style.height="0%"
+    }
+    if(alpha01>180 && alpha01<220)
+    {
+        wfp2.style.height="100%"
+        wfp1.style.height="0%"
+        wfp3.style.height="0%"
+    }
+    if(alpha01>10 && alpha01<180)
+    {
+        wfp3.style.height="100%"
+        wfp1.style.height="0%"
+        wfp2.style.height="0%"
+    }
+
     if(alpha01>4)
     {
-        setTimeout(OnTmer,100);
+        setTimeout(OnTmer,50);
         
     }else{
-        div1.style.visibility="hidden";
+        div1.style.visibility="collapse";
     }
     
     }
@@ -38,11 +64,20 @@ description: "Blog of learning note"
 
     <div align="center" style=" width: 800px ;height:800px ;background-color:rgba(255,128,128,0) ; "  >
         
-        <div align="center" style="vertical-align:center;">
-            <img style="height:100%; " src=".\img\wingforpapilliodya.png" />
+        <div  align="center" style="">
+            <img  id="wfp_1" style="height:100%; ; " src=".\img\wingforpapilliodya_1.png" />
+            
+        </div>
+        <div  align="center" style="">
+            <img id="wfp_2" style="height:0%; ; " src=".\img\wingforpapilliodya_2.png" />
+            
+        </div>
+        <div align="center" style="">
+            <img id="wfp_3" style="height:0%; ; " src=".\img\wingforpapilliodya_3.png" />
             
         </div>
         
+
         
     </div>
     
