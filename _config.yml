@@ -1,6 +1,6 @@
 # Site settings
 title: (●'◡'●)
-SEOTitle: 虫虫的博客 | SiyuanWang's Blog
+SEOTitle: 虫虫的博客
 header-img: img/home-bg.jpg
 email: Papilliodya@outlook.com
 description: ""
@@ -62,8 +62,8 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "自己都不知道这是什么博客"
-sidebar-avatar: /img/github_clowread.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "想到什么写什么(我是小仙女)"
+sidebar-avatar: /img/github_papilliodya.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
